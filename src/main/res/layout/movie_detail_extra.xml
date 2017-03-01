@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trailers"
+        android:textSize="23sp"
+        tools:layout_editor_absoluteX="16dp"
+        android:id="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/guideline_trailer2" />
+
+    <ImageButton
+        android:id="@+id/ib_trailer_1"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="35dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <TextView
+        android:id="@+id/tv_trailers_title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trailer_title_1_placeholder"
+        android:textSize="15sp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/ib_trailer_1"
+        app:layout_constraintTop_toTopOf="@+id/guideline_trailer2"
+        android:layout_marginTop="32dp" />
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:id="@+id/guideline_trailer2"
+        />
+    <ImageButton
+        android:id="@+id/ib_trailer_2"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="35dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        app:layout_constraintTop_toBottomOf="@+id/ib_trailer_1" />
+    <TextView
+        android:id="@+id/tv_trailers_title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trailer_title_2_placeholder"
+        android:textSize="15sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trailers_title_1"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/ib_trailer_2" />
+
+    <ImageButton
+        android:id="@+id/ib_trailer_3"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="35dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_play_arrow_black_24dp"
+        app:layout_constraintTop_toBottomOf="@+id/ib_trailer_2" />
+    <TextView
+        android:id="@+id/tv_trailers_title_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trailer_title_3_placeholder"
+        android:textSize="15sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trailers_title_2"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/ib_trailer_3" />
+
+
+    <TextView
+        android:id="@+id/tv_reviews"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        android:text="@string/reviews"
+        android:textSize="23sp"
+        app:layout_constraintTop_toBottomOf="@+id/ib_trailer_3" />
+    <TextView
+    android:id="@+id/tv_reviewer_1"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        android:text="@string/reviewer_placeholder"
+        android:textSize="15sp"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reviews" />
+    <TextView
+        android:id="@+id/tv_review_1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        android:paddingTop="0dp"
+        android:textSize="15sp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reviewer_1" />
+    <TextView
+        android:id="@+id/tv_reviewer_2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_review_1"
+        android:padding="10dp"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/tv_review_2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        android:textSize="15sp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reviewer_2" />
+    <TextView
+        android:id="@+id/tv_reviewer_3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        tools:layout_editor_absoluteX="16dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_review_2" />
+    <TextView
+        android:id="@+id/tv_review_3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reviewer_3" />
+
+
+</android.support.constraint.ConstraintLayout>
+    </layout>
