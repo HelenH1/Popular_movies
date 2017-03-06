@@ -15,7 +15,7 @@ android:minHeight="?android:attr/listPreferredItemHeight"
      limitations under the License.
 -->
 
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -34,15 +34,9 @@ android:minHeight="?android:attr/listPreferredItemHeight"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
         tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="16dp" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5"
-        tools:layout_editor_absoluteY="1dp"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="16dp"
+        android:contentDescription="@string/picture_of_movie_poster"/>
 
-</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

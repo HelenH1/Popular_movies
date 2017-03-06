@@ -41,12 +41,13 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.5"
             tools:layout_editor_absoluteX="192dp"
-            tools:layout_editor_absoluteY="0dp"/>
+            tools:layout_editor_absoluteY="0dp" />
 
         <ImageView
             android:id="@+id/iv_movie_poster_old"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/picture_of_movie_poster"/>
         <TextView
             android:id="@+id/tv_release_date"
             android:layout_width="wrap_content"

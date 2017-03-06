@@ -11,13 +11,13 @@
         android:layout_width="384dp"
         android:layout_height="111dp"
         android:id="@+id/tv_movie_title"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp"
         android:textSize="30sp"
         android:paddingLeft="20dp"
         android:text="@string/movie_title_placeholder"
         android:gravity="center_vertical"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv_movie_poster"
@@ -32,7 +32,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/tv_rating"
         android:layout_marginEnd="8dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        android:contentDescription="@string/picture_of_movie_poster"/>
 
     <TextView
         android:id="@+id/tv_release_date"
